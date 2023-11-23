@@ -1,22 +1,3 @@
-class Being {
-    String name;
-    int age;
-
-    public Being(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
-
-    void setName(String name) {
-        this.name = name;
-    }
-
-    void setAge(int age) {
-        this.age = age;
-    }
-}
-
-
 public class People extends Being {
 
     String lastName;
@@ -32,5 +13,10 @@ public class People extends Being {
         System.out.println(myMain.salary);
         System.out.println(Main.lastName);
         this.age = 45;
+    }
+
+    @Override
+    public String FavoriteFood() {
+        return "Pasta";
     }
 }
