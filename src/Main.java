@@ -1,15 +1,14 @@
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) {
-        var nome = "Julia"; //This variable exists only inside this function
-        int idade = 22; //This variable exists outside the function too
-
-        if(idade > 22) {
-            System.out.println("maior");
-        } else if (idade == 22) {
-            System.out.println("igual");
-        } else {
-            System.out.println("menor");
-        }
+        int[] idades = new int[10]; //Array
+        ArrayList<Integer> ages = new ArrayList<Integer>(); //Array list (it's dynamically allocated)
+        ages.add(30);
+        ages.add(40);
+        ages.remove(0); //It will delete the age from the index 0 (30)
+        ages.get(1);
+        ages.size();
     }
 }
