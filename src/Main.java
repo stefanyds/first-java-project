@@ -1,15 +1,21 @@
 public class Main {
 
     public static void main(String[] args) {
-       int idade = 10;
+        //Casting is used to transform the type of a variable into another one.
+        int idade1 = 22;
+        double idade2 = idade1;
+        //^This works because double is bigger than integer^
 
-        for(var i = 0; i < idade; i++) {
-            System.out.println(i);
-        }
+        idade1 = (int) idade2;
 
-        int y = 0;
-        while(y < idade) {
-            y++;
-        }
+        char letra = 'a';
+        String nome = String.valueOf(letra);
+        //^Char to String^
+        letra = nome.charAt(0);
+        //^String to Char^
+        String nome2 = String.valueOf(idade2);
+        //^Integer to String^
+        idade1 = Integer.parseInt(nome2);
+        //^String to Integer^
     }
 }
