@@ -7,11 +7,8 @@ public class Main {
       System.out.println(name2);
     }
 
-    void declareName() {
-        name = "John";
+    public Main(String name) {
+        this.name = name;
     }
-    
-    String getName() {
-        return name;
-    }
+    //^Constructor, it should have the same name as class^ 
 }
