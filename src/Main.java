@@ -8,7 +8,8 @@ public class Main {
     private String lastName; //This variable is not visible to Pessoa.java
 
     public static void main(String[] args) {
-      System.out.println(name2);
+      Being myBeing = new People("Carrie", 50, "Perry"); //You can call People here because it is a derived class from Being
+      People myPeople = new People("Charlotte", 28, "Grey"); //You can not call Being here
     }
 
     public Main(String name) {
